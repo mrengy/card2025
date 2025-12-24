@@ -54,7 +54,8 @@ $( document ).ready(function() {
         d: "basketball"
       },
       correctAnswer: "d",
-      correctness: false
+      correctness: false,
+      linkText: "See, we played tee ball. After one season, Myron declared he no longer wanted to participate in ball sports."
     },
     {
       heading: "badge",
@@ -126,7 +127,8 @@ $( document ).ready(function() {
         d: "A roller coaster"
       },
       correctAnswer: "d",
-      correctness: false
+      correctness: false,
+      linkText: "Grammy K took us to Storybok Land!"
     },
     {
       heading: "collection",
@@ -168,7 +170,8 @@ $( document ).ready(function() {
         d: "Jeanne knew the conductor"
       },
       correctAnswer: "c",
-      correctness: false
+      correctness: false,
+      linkText: "The conductor was a former Blue Devil, and he was excited to see someone representing the drum and bugle corps activity. We had a beautiful ride in a car with a glass roof."
     }
   ]
 
@@ -414,12 +417,22 @@ $( document ).ready(function() {
     // for each question
     myQuestions.forEach( (currentQuestion, questionNumber) => {
       if (typeof currentQuestion.link !== 'undefined'){
+        // if there is a link
         $("#question-"+questionNumber+" .answer-business").append(
          `
          <div class="link">
           <a href="${currentQuestion.link}">
             ${currentQuestion.linkText}
           </a>
+         </div>
+         ` 
+        );
+      } else if (typeof currentQuestion.linkText !== 'undefined'){
+        // if there is text but no link
+        $("#question-"+questionNumber+" .answer-business").append(
+         `
+         <div class="link">
+            ${currentQuestion.linkText}
          </div>
          ` 
         );
