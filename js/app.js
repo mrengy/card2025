@@ -13,183 +13,161 @@ $( document ).ready(function() {
 
   const myQuestions = [
     {
-      heading: "sports",
-      questionAlt: "holding a plastic baseball bat against a soccer ball",
-      answerAlt: "Myron rock climbing",
-      question: "What new sport did Myron and Mike participate in all year?",
+      heading: "musical",
+      questionAlt: "Caitlin and Greg looking starstruck, holding photos of Myron outside the performance venue",
+      answerAlt: "Myron staring into the distance, with other kids waving scarves around him during the performance",
+      question: "What musical did Myron’s school put on this spring? ",
       answers:{
-        a: "Swimming",
-        b: "Rock climbing",
-        c: "Break dancing",
-        d: "Skateboarding"
-      },
-      correctAnswer: "b",
-      correctness: false
-    },
-    {
-      heading: "birthday",
-      questionAlt: "Myron in the back of the car surrounded by birthday balloons",
-      answerAlt: "Birthday parade group photo",
-      question: "How did we celebrate Myron’s 5th Birthday",
-      answers:{
-        a: "A bounce house",
-        b: "Bumper cars",
-        c: "A tub full of Cheerios",
-        d: "A robot parade"
-      },
-      correctAnswer: "d",
-      correctness: false,
-      link: "https://www.emandminbeantown.com/myron-is-5/",
-      linkText: "See Myron's birthday parade"
-    },
-    {
-      heading: "creature",
-      questionAlt: "Myron wearing a crown and a cape, pointing a magic wand at toy trees",
-      answerAlt: "Myron and Dominic in the park, wearing St. Patrick's Day costume gear",
-      question: "What mythical creature did Myron hunt in our local park?",
-      answers:{
-        a: "A leprechaun",
-        b: "A fairy",
-        c: "A sasquatch",
-        d: "A unicorn"
+        a: "The Wizard of Oz",
+        b: "Hair",
+        c: "Finding Nemo",
+        d: "Shrek"
       },
       correctAnswer: "a",
       correctness: false
     },
     {
-      heading: "superlative",
-      questionAlt: "Myron in front of a giant stuffed clam",
-      answerAlt: "Myron in front of the world's largest tree near Oaxaca, Mexico",
-      question: "What superlative did we see this year?",
+      heading: "poet",
+      questionAlt: "Our friend, Max reading a poem in front of a set table, with guests standing around the table",
+      answerAlt: "Guests gathered around the table",
+      question: "Emily, Mike and Myron attended our friend, Max’s dinner party honoring which 18th century poet?",
       answers:{
-        a: "The largest unsupported dome structure",
-        b: "The largest species of animal",
-        c: "The largest car made out of toothpicks",
-        d: "The world’s widest tree"
+        a: "William Blake ",
+        b: "Robert Burns",
+        c: "William Wordsworth ",
+        d: "Johann Wolfgang von Goethe"
       },
-      correctAnswer: "d",
+      correctAnswer: "b",
       correctness: false,
-      link: "https://en.wikipedia.org/wiki/%C3%81rbol_del_Tule",
-      linkText: "Learn more about el Árbol del Tule"
+      link: "https://en.wikipedia.org/wiki/Burns_supper",
+      linkText: "Learn more about the Scottish Burns Supper tradition"
     },
     {
-      heading: "food",
-      questionAlt: "Myron looking dismayed, wearing a sweater depicting a cat wearing a red berret, with a skillet of mac and cheese with green sprouts on top",
-      answerAlt: "Joe pointing at Myron, both seated at an outdoor food hall in Oaxaca",
-      question: "When we visited a foreign city this year, what new food did Em and Myron try?",
+      heading: "sport",
+      questionAlt: "Myron with underwear on his head",
+      answerAlt: "Mike and Myron in posed official tee ball photo, proving they did participate in tee ball.",
+      question: "What sport did Myron <strong>not</strong> participate in this year?",
       answers:{
-        a: "Snake",
-        b: "Scorpions",
-        c: "Grasshoppers",
-        d: "Tripe"
+        a: "tee ball",
+        b: "rock climbing",
+        c: "karate",
+        d: "basketball"
+      },
+      correctAnswer: "d",
+      correctness: false
+    },
+    {
+      heading: "badge",
+      questionAlt: "Myron in a desert landscape, dumping something out of his shoe",
+      answerAlt: "Myron sporting his junior ranger badge",
+      question: "Myron received his Junior Ranger Badge after visiting which national park this spring?",
+      answers:{
+        a: "Canyon of the Ancients",
+        b: "Mesa Verde",
+        c: "Joshua Tree",
+        d: "Grand Canyon"
+      },
+      correctAnswer: "a",
+      correctness: false
+    },
+    {
+      heading: "mall",
+      questionAlt: "Close-up photo of Secret Mall Apartment film poster, with Emily's name visible in the credits",
+      answerAlt: "Still image from Secret Mall Apartment film, with Colin showing part of the model he made of the Providence Place Mall and the secret apartment",
+      question: "In March, Secret Mall Apartment had its national debut at the Providence Place Mall. Over the course of the year it became the 8th top grossing documentary of 2025, narrowly beating out which other Documentary?",
+      answers:{
+        a: "Cheech and Chong's Last Movie",
+        b: "No Other Land",
+        c: "CatVideoFest 2025",
+        d: "Taylor Swift: the Official Release Party of a Showgirl"
+      },
+      correctAnswer: "a",
+      correctness: false,
+      link: "https://www.the-numbers.com/market/2025/genre/Documentary",
+      linkText: "Domestic Box Office Performance for Documentary Movies in 2025"
+    },
+    {
+      heading: "work",
+      questionAlt: "Photo of a whiteboard with the text, 'Please consult your scum master before having kittens do your coding. Too late. They are doing it right meow. Cats write purrrrrrl.'",
+      answerAlt: "Molly standing on top of a laser printer",
+      question: "Despite the current political environment, Mike continues to work on software for which federal government agency / department?",
+      answers:{
+        a: "Veterans Affairs",
+        b: "Department of Education",
+        c: "Centers for Medicare and Medicaid Services",
+        d: "The Corporation for National and Community Service"
       },
       correctAnswer: "c",
-      correctness: false,
-      link: "https://en.wikipedia.org/wiki/Chapulines",
-      linkText: "Learn more about chapulines"
+      correctness: false
     },
     {
       heading: "award",
-      questionAlt: "Myron with a shirt covering his face",
-      answerAlt: "Photo of Myron's book worm award",
-      question: "What award did Myron receive at the end of his Pre-K school year?",
+      questionAlt: "Em seated on a balcony and smiling at the camera",
+      answerAlt: "A printed award certificate that says, 'OCCR Preesnts: AppleFest 2025. This certificate is awarded to Emily Ustach for winning first place in the best presentation category fo AppleFest 2025. Awarded October 28, 2025.'",
+      question: "What award did Emily win this year?",
       answers:{
-        a: "Gardener",
-        b: "Most talkative",
-        c: "Most creative",
-        d: "Book worm"
+        a: "'Best Documentary' at the Rhode Island International Film Fest",
+        b: "'Best Presentation' at AppleFest bake-off 2025",
+        c: "'Best Trunk' in the Edgewood Trunk or Treat ",
+        d: "'Most Patient' in the Engstach Household"
+      },
+      correctAnswer: "b",
+      correctness: false
+    },
+    {
+      heading: "ride",
+      questionAlt: "Myron riding a steel cutout silhouette of a sheepdog in a park",
+      answerAlt: "Myron and Mike riding a roller coaster at Storybook Land",
+      question: "What did Myron ride on for the first time this year?",
+      answers:{
+        a: "A horse",
+        b: "A donkey",
+        c: "A bumper car",
+        d: "A roller coaster"
       },
       correctAnswer: "d",
       correctness: false
     },
     {
-      heading: "documentary",
-      questionAlt: "a young Em seated in front of wood dowels",
-      answerAlt: "Still image from the Secret Mall Apartment documentary",
-      question: "South by Southwest premiered a documentary featuring a 20 year old art project that Emily did in what location?",
+      heading: "collection",
+      questionAlt: "Molly walking on Myron's back while Myron reads a book in his bed",
+      answerAlt: "A rock with Pikachu painted on it, as well as the text, 'Gotta rock em all'",
+      question: "What item did Myron get his first of from a friend this year and then begin to collect?",
       answers:{
-        a: "Central Park, NYC",
-        b: "Salem College",
-        c: "Providence Place Mall",
-        d: "Cranston Street Armory"
+        a: "Magic, the Gathering cards",
+        b: "Baseball cards",
+        c: "Stamps",
+        d: "Pokémon cards"
       },
-      correctAnswer: "c",
-      correctness: false, 
-      link: "https://www.secretmallapartment.com/",
-      linkText: "Learn more about the Secret Mall Apartment documentary"
-    },
-    {
-      heading: "theater",
-      questionAlt: "Myron holding a fish toy over The Rainbow Fish book",
-      answerAlt: "Myron holding his DIY octopus costume over his face",
-      question: "What part did Myron play in his summer theater camp production of The Rainbow Fish?",
-      answers:{
-        a: "The rainbow fish",
-        b: "The octopus",
-        c: "The blue fish",
-        d: "The seahorse"
-      },
-      correctAnswer: "b",
-      correctness: false,
-      link: "https://www.emandminbeantown.com/myron-does-theater-camp/",
-      linkText: "See Myron's theater camp production of The Rainbow Fish"
-    },
-    {
-      heading: "california",
-      questionAlt: "Shawn, Natalie, and Mike in a Yayoi Kusama art installation featuring infinity mirrors",
-      answerAlt: "Mike and Greg on a sailboat",
-      question: "When Mike was in California for a baptism, from what situation did a friend have to rescue him and another friend?",
-      answers:{
-        a: "A bear attack",
-        b: "A capsized sailboat",
-        c: "A snake bite",
-        d: "Getting stranded on the freeway"
-      },
-      correctAnswer: "b",
+      correctAnswer: "d",
       correctness: false
     },
     {
-      heading: "halloween",
-      questionAlt: "Matt and Myron carving a pumpkin",
-      answerAlt: "Myron in Gigantosaurus costume, with a toy dinosaur in his mouth",
-      question: "What did Myron dress up as for Halloween?",
+      heading: "aquarium",
+      questionAlt: "Aquarium snail on plant",
+      answerAlt: "Aquarium snail riding on the thermometer, which is floating in the water",
+      question: "We got a new aquarium. What did we collectively name the snails?",
       answers:{
-        a: "A robot",
-        b: "Gigantosaurus",
-        c: "Martin Kratt",
-        d: "A skeleton"
-      },
-      correctAnswer: "b",
-      correctness: false,
-      link: "https://gigantosaurus-tvseries.com/",
-      linkText: "Learn more about the TV show, Gigantosaurus"
-    },
-    {
-      heading: "phrase",
-      questionAlt: "Group of friends and Em, Myron, and Mike, with mustache glasses on",
-      answerAlt: "Myron and Auntie Caitlin, seated at the table and laughing",
-      question: "Myron spent a lot of time with Mike’s friends. What phrase did he pick up from them?",
-      answers:{
-        a: "Sick, man!",
-        b: "That’s what she said",
-        c: "If you’re gonna spew, spew into this",
-        d: "Wicked"
+        a: "The Comin’ in Hot Crew",
+        b: "The Slowbros",
+        c: "Marcel the Shells",
+        d: "Shells Silverstein"
       },
       correctAnswer: "a",
       correctness: false
     },
     {
-      heading: "thanksgiving",
-      questionAlt: "Our Thanksgiving group seated on the couch",
-      answerAlt: "Em slicing a delicious mushroom wellington",
-      question: "We hosted Thanksgiving this year for the first time. What was Mike’s favorite dish?",
+      heading: "train",
+      questionAlt: "Steam train pulling its cars around a bend on a cliff",
+      answerAlt: "Jeanne, Mike, Em, and Myron in a posed photo on the train, with a frame that says, 'Wanted: dead or alive'",
+      question: "We went on a steam train ride in Colorado with Jeanne. How did we get a free upgrade to first class?",
       answers:{
-        a: "Acorn squash bake",
-        b: "Mushroom wellington",
-        c: "Collards",
-        d: "Cranberries"
+        a: "Myron told a joke",
+        b: "We got a random bonus ticket",
+        c: "Mike wore a Santa Clara Vanguard shirt",
+        d: "Jeanne knew the conductor"
       },
-      correctAnswer: "b",
+      correctAnswer: "c",
       correctness: false
     }
   ]
