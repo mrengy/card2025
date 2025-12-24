@@ -24,7 +24,8 @@ $( document ).ready(function() {
         d: "Shrek"
       },
       correctAnswer: "a",
-      correctness: false
+      correctness: false,
+      linkText: "Photo credit: Kath Connolly"
     },
     {
       heading: "poet",
