@@ -40,7 +40,7 @@ $( document ).ready(function() {
       correctAnswer: "b",
       correctness: false,
       link: "https://en.wikipedia.org/wiki/Burns_supper",
-      linkText: "Learn more about the Scottish Burns Supper tradition"
+      linkText: "Learn more about the Scottish Burns Supper tradition. Thank you, Max!"
     },
     {
       heading: "sport",
