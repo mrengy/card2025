@@ -45,7 +45,7 @@ $( document ).ready(function() {
     },
     {
       heading: "sport",
-      questionAlt: "Myron with underwear on his head",
+      questionAlt: "Myron throwing a snowball",
       answerAlt: "Mike and Myron in posed official tee ball photo, proving they did participate in tee ball.",
       question: "What sport did Myron <strong>not</strong> participate in this year?",
       answers:{
